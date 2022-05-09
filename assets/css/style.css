@@ -52,6 +52,7 @@ footer a {
 }
 
 /*Grid*/
+@media screen and (min-width: 1000px) {
 .aboutmecontainer {
     display: grid;
     grid-template-columns: 1fr minmax(min-content, 0) 1fr;
@@ -78,6 +79,39 @@ footer a {
     grid-template-areas: 
     "title3 spacer"
     "skills1 skills2";
+}
+}
+
+@media screen and (max-width: 999px) {
+    .aboutmecontainer {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: minmax(min-content, 0);
+        grid-template-areas: 
+        "portrait1"
+        "aboutme1"
+        "aboutme2";
+    }
+     
+    .experiencecontainer {
+        background-color: darkslateblue;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: minmax(min-content, 0);
+        grid-template-areas: 
+        "title2"
+        "experience";
+    }
+
+    .skillscontainer {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: minmax(min-content, 0);
+        grid-template-areas: 
+        "title3"
+        "skills1"
+        "skills2";
+}
 }
 
 /*Flex*/
