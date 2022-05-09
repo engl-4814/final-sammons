@@ -1,0 +1,150 @@
+/*Typography*/
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond&family=Roboto&display=swap');
+
+body {
+    font-family: 'Roboto', serif;
+}
+
+h1, h2, h3 {
+    font-family: 'EB+Garamond', serif;
+}
+/*Topnav*/
+.topnav {
+    background-color: darkslateblue;
+    overflow: hidden;
+}
+
+.topnav a {
+    float: left;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+.topnav a:hover {
+    background-color: white;
+    color: black;
+}
+
+.topnav a.active {
+    background-color: grey;
+}
+
+/*Footer*/
+footer .nav {
+    background-color: darkslateblue;
+    overflow: hidden;
+}
+
+footer .nav a {
+    float: left;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+/*Grid*/
+.aboutmecontainer {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-rows: 500px;
+    grid-template-areas: 
+    "aboutme1 portrait1 aboutme2";
+}
+
+.experiencecontainer {
+    background-color: darkslateblue;
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-rows: 100px minmax(min-content, 0) 100px;
+    grid-template-areas: 
+    "spacer title2 spacer"
+    "spacer experience spacer"
+    "spacer spacer spacer";
+}
+
+.skillscontainer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 300px minmax(min-content, 0);
+    grid-template-areas: 
+    "spacer title3 spacer spacer"
+    "spacer skills1 skills2 spacer";
+}
+
+/*Flex*/
+.project {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.item {
+    width: 100%;
+}
+
+.image {
+    width: 49%;
+    height: 100px;
+    margin-bottom: 2%;
+}
+
+.imagereplacer {
+    width: 100%;
+}
+
+/*Individual Elements*/
+.title1 {
+    width: 50%;
+    margin: 0 auto;
+}
+
+.title1 h1 {
+    padding-bottom: 20px;
+    border-bottom: 1px solid black;
+    border-bottom-color: black;
+}
+
+.aboutme1 {
+    grid-area: aboutme1;
+}
+
+.portrait1 {
+    grid-area: portrait1;
+}
+
+.aboutme2 {
+    grid-area: aboutme2;
+}
+
+.title2 {
+    grid-area: title2;
+}
+
+.experience {
+    grid-area: experience;
+}
+
+.title3 {
+    grid-area: title3;
+}
+
+.skills1 {
+    grid-area: skills1;
+}
+
+.skills2 {
+    grid-area: skills2;
+}
+
+.spacer {
+    grid-area: spacer;
+}
+
+.experiencecontainer h2, li {
+    color: white;
+}
