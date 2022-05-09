@@ -147,6 +147,6 @@ footer .nav a {
     grid-area: spacer;
 }
 
-.experiencecontainer h2, li {
+.experiencecontainer h2, .experiencecontainer li {
     color: white;
 }
