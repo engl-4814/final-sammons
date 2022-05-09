@@ -59,22 +59,20 @@ footer .nav a {
 .experiencecontainer {
     background-color: darkslateblue;
     display: grid;
-    overflow-wrap: break-word;
-    grid-template-columns: 1fr 2fr 1fr;
-    grid-template-rows: 100px minmax(min-content, 0) 100px;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 100px minmax(min-content, 0);
     grid-template-areas: 
-    "spacer title2 spacer"
-    "spacer experience spacer"
-    "spacer spacer spacer";
+    "title2 spacer"
+    "experience spacer";
 }
 
 .skillscontainer {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 300px minmax(min-content, 0);
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 50px 300px;
     grid-template-areas: 
-    "spacer title3 spacer spacer"
-    "spacer skills1 skills2 spacer";
+    "title3 spacer"
+    "skills1 skills2";
 }
 
 /*Flex*/
