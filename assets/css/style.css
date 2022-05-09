@@ -33,7 +33,7 @@ h1, h2, h3 {
 }
 
 /*Footer*/
-footer .nav {
+footer {
     background-color: darkslateblue;
     overflow: hidden;
 }
@@ -101,6 +101,7 @@ footer .nav a {
 .title1 {
     width: 50%;
     margin: 0 auto;
+    text-align: center;
 }
 
 .title1 h1 {
