@@ -38,6 +38,10 @@ footer {
     overflow: hidden;
 }
 
+footer h2 {
+    color: white;
+}
+
 footer a {
     float: left;
     color: white;
